@@ -1,0 +1,245 @@
+* body {
+    /* font-family: Rajdhani, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+.red {
+    color: rgba(255, 0, 0, 0.651);
+}
+.bq {
+    color: rgba(241, 221, 106, 0.932);
+}
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: url(images/contentbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 20px 30px;
+}
+
+.nav, .socials{
+    margin-top: 40px;
+}
+.nav > a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.nav > a:hover {
+    color: #ffffff;
+    background-color: #000000;
+    
+}
+.socials > i {
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+    font-size: 1em;
+    padding: 5px;
+    transition: 0.5s;
+}
+.socials > i:hover {
+    font-size: 1.2em;
+}
+
+.orderContent {
+    background-color: purple;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+    padding: 0 16px;
+}
+
+
+
+.greeting {
+    display: flex;
+    justify-content: center;
+}
+
+.greeting > .image > img  {
+    height: 70vh;
+    width: 50vw;
+}
+
+.greeting .whatWeDo {
+    padding: 100px 20px 0px;
+    width: 50vw;
+    font-weight: 700;
+    background-color: #e4e2e28f;
+    transition: width 2s;
+}
+.greeting .whatWeDo:hover {
+    width: 60vw;
+}
+
+.greeting .whatWeDo >  h1 {
+    font-size: 2.5em;
+
+}
+
+.learnMore a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-weight: 700;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+.learnMore a:hover {
+    background-color: black;
+    letter-spacing: 3px;
+    padding-right: 40px;
+    transition: 0.5s;
+}
+
+/* services styles */
+
+.uppercase {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: 700;
+    font-size: 1.6em;
+    color: black;
+}
+
+.servicesTop {
+    background-color: rgb(48, 44, 44);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 100px;
+    margin: -30px 50px 0 ;
+    font-weight: 700;
+}
+
+.servicesFigs {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+}
+.servicesFigs figure {
+    width: 300px;
+    margin-bottom: 50px;
+
+}
+.servicesFigs img {
+    width: 300px;
+    height: 200px;
+}
+.servicesFigs h3 {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    /* nav styles */
+    .header > nav, .header> .contact, .header>.orderContent {
+        display: none;
+    }
+
+    /* greeting styles */
+    .greeting .whatWeDo {
+        padding: 50px 20px;
+    }
+
+    .servicesFigs figure {
+        width: 250px;
+    }
+    .servicesFigs img {
+        width: 250px;
+        height: 200px;
+    }
+    .servicesFigs h3 {
+        font-size: 0.6em;
+        
+    } 
+}
+
+@media only screen and (max-width: 1000px) {
+    .servicesTop {
+        padding-bottom: 50px;
+    }
+    
+    .servicesFigs {  
+        width: 100%;
+    }
+    .servicesFigs figure {
+        width: 230px;
+    }
+    .servicesFigs img {
+        width: 230px;
+        height: 200px;
+    }
+    .servicesFigs h3 {
+        font-size: 0.7em;
+        
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* greetings styles */
+    .greeting {
+        height: 50vh;
+    }
+    
+    .greeting > .image > img  {
+        height: 50vh;
+    }
+    
+    .greeting .whatWeDo {
+        padding: 30px 20px 0px;
+        font-weight: 500;
+    }
+    
+    .greeting .whatWeDo >  h1 {
+        font-size: 1.5em;
+    
+    }
+    
+    /* services styles */
+
+    .servicesFigs {  
+        display: block;
+    }
+    .servicesFigs figure {
+        width: 100%;
+    }
+    .servicesFigs img {
+        width: 80vw;
+        height: 60vh;
+    }
+    .servicesFigs >figcaption {
+        width: 60vw;
+    }
+    .servicesFigs h3 {
+        font-size: 0.7em;
+        
+    }
+
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .servicesFigs img {
+        height: 50vh;
+    }
+    figcaption {
+        width: 80vw;
+    }
+    
+}
